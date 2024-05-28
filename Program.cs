@@ -1,14 +1,12 @@
 ﻿using EspacioTarea;
 
 int N;
-
-
-
 Console.WriteLine("\nIngrese la cantidad de tareas pendientes:\n");
 int.TryParse(Console.ReadLine(), out N);
 
-List<Tarea> listaTareas = new List<Tarea>();
+List<Tarea> tareasPendientes = new List<Tarea>();
 
+//Creo las N tareas.
 for (int i = 0; i < N; i++)
 {
     Random random = new Random();
@@ -18,6 +16,6 @@ for (int i = 0; i < N; i++)
 
     Tarea tarea = new Tarea(cont, descripcion, duracion);
 
-    listaTareas.Add(tarea);
+    tareasPendientes.Add(tarea);
     cont++;
 }
