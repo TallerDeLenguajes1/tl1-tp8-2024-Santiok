@@ -1,4 +1,8 @@
 ﻿using EspacioTarea;
+using EspacioCalculadora;
+using EspacioOperacion;
+
+//EJERCICIO 1.
 
     int N, opcion;
     Console.WriteLine("\nIngrese la cantidad de tareas pendientes:\n");
@@ -108,3 +112,7 @@ void mostrarTarea(List<Tarea> misTarea)
         Console.WriteLine("\nLa duracion de la tarea es: " + tarea.duracionTarea + "\n");
     }
 }
+
+//EJERCICIO 2.
+
+
