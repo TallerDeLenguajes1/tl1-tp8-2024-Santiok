@@ -5,6 +5,19 @@ public class Operacion {
     private double nuevoValor;
     private TipoOperacion operacion;
 
+    //Costructor.
+
+    public Operacion(double resultadoAnt, double valorNue, TipoOperacion ope)
+    {
+        this.resultadoAnterior = resultadoAnt;
+        this.nuevoValor = valorNue;
+        this.operacion = ope;
+    }
+    public Operacion()
+    {
+
+    }
+
 
     public double Resultado{
 
@@ -15,6 +28,10 @@ public class Operacion {
 
         get { return nuevoValor;}
 
+    }
+    public TipoOperacion miOperacion{
+
+        get { return operacion; }
     }
 
     public enum TipoOperacion{
